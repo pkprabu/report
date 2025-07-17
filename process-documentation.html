@@ -5,7 +5,7 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Process Documentation: Email Generator</title>
+<title>Process Documentation: Email Generator v2.0</title>
 <style type="text/css">
     /* Responsive and Client-Specific Styles */
     body { width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; }
@@ -24,7 +24,6 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
 </head>
 
 <body style="margin: 0; padding: 0; background-color: #f0f2f5; font-family: 'Segoe UI', Arial, sans-serif;">
-    <!-- 01000001 01010101 01010100 01001000 01001111 01010010 00111010 00100000 01010000 01010010 01000001 01000010 01010101 00100000 01010000 01000101 01010010 01010101 01001101 01000001 01001100 -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
         <td align="center" bgcolor="#f0f2f5" style="padding: 20px;">
@@ -43,15 +42,15 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                     </td>
                 </tr>
 
-                <!-- SECTION: PURPOSE -->
+                <!-- SECTION: SETUP -->
                 <tr>
                     <td class="mobile-padding" style="padding: 30px 25px;">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
-                                <td>
-                                    <h2 class="mobile-h2" style="margin: 0 0 15px 0; font-size: 22px; font-weight: 600; color: #333333;">1. Purpose</h2>
-                                    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555555;">
-                                        This HTML file is a self-contained tool to streamline creating the "Daily Performance Overview" email. It acts as both a powerful <strong>Editor</strong> in your browser and a "bulletproof" <strong>Template</strong> for Outlook, ensuring your report is always accurate and perfectly formatted.
+                                <td bgcolor="#fffbe6" style="background-color: #fffbe6; padding: 20px; border-left: 4px solid #ffe58f; border-radius: 4px;">
+                                    <h3 style="margin: 0 0 10px 0; font-size: 18px; color: #d46b08;">1. Critical First Step: Setup</h3>
+                                    <p style="margin: 0; font-size: 15px; line-height: 1.6; color: #594300;">
+                                        This tool now uses two files. For it to work, you **must** place both `index.html` and `script.js` inside the **same folder** on your computer.
                                     </p>
                                 </td>
                             </tr>
@@ -66,10 +65,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                             <tr>
                                 <td>
                                     <h2 class="mobile-h2" style="margin: 0 0 20px 0; font-size: 22px; font-weight: 600; color: #333333;">2. Key Features</h2>
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">✏️</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">In-Place Editing:</strong> Click any data point to edit it directly.</p></td></tr></table>
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">➕</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Dynamic Layout:</strong> Add/delete rows and remove entire sections using the control panel.</p></td></tr></table>
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">💾</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Persistent State:</strong> All changes are saved in your browser for next time.</p></td></tr></table>
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">📋</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Outlook-Ready:</strong> Copy-paste the entire page for a perfectly formatted email.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">🚀</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Bulk Campaign Creator:</strong> Quickly add dozens of campaigns by pasting lists of names and URLs.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">✏️</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Total Editability:</strong> Click any data point to edit it—metrics, campaign names, URLs, and even section headers.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">➕</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Dynamic Layout:</strong> Add/delete individual rows and remove entire sections using the control panel.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">💾</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Persistent State:</strong> All content and layout changes are saved in your browser for next time.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">📋</td><td><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">One-Click Copy:</strong> A dedicated button copies the final, perfectly formatted report to your clipboard.</p></td></tr></table>
                                 </td>
                             </tr>
                         </table>
@@ -83,10 +83,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                             <tr>
                                 <td>
                                     <h2 class="mobile-h2" style="margin: 0 0 20px 0; font-size: 22px; font-weight: 600; color: #333333;">3. Step-by-Step Workflow</h2>
-                                    <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 1: Open & Edit</strong><br/>Open the `.html` file in your browser. Click on any text or number to edit it. Use the control panel at the top to add/remove rows or sections.</p>
-                                    <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 2: Select All</strong><br/>Once finished, click anywhere on the page and press <span style="background-color: #e9ecef; border: 1px solid #ced4da; border-radius: 3px; padding: 2px 5px; font-family: monospace;">Ctrl+A</span> (or <span style="background-color: #e9ecef; border: 1px solid #ced4da; border-radius: 3px; padding: 2px 5px; font-family: monospace;">Cmd+A</span> on Mac) to select everything.</p>
-                                    <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 3: Copy</strong><br/>Press <span style="background-color: #e9ecef; border: 1px solid #ced4da; border-radius: 3px; padding: 2px 5px; font-family: monospace;">Ctrl+C</span> (or <span style="background-color: #e9ecef; border: 1px solid #ced4da; border-radius: 3px; padding: 2px 5px; font-family: monospace;">Cmd+C</span> on Mac) to copy the entire selection.</p>
-                                    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 4: Paste into Outlook</strong><br/>Create a new email in Outlook. In the message body, press <span style="background-color: #e9ecef; border: 1px solid #ced4da; border-radius: 3px; padding: 2px 5px; font-family: monospace;">Ctrl+V</span> (or <span style="background-color: #e9ecef; border: 1px solid #ced4da; border-radius: 3px; padding: 2px 5px; font-family: monospace;">Cmd+V</span> on Mac) to paste. The report will appear perfectly formatted.</p>
+                                    <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 1: Open the Tool</strong><br/>Open the `index.html` file in your browser.</p>
+                                    <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 2: Build the Report</strong><br/>Use the **Bulk Campaign Creator** to paste lists of names and URLs, select a target section, and click **"Add Campaigns"**. Repeat for each section as needed.</p>
+                                    <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 3: Fine-Tune and Edit</strong><br/>Review the generated report. Click on any cell (metrics, campaign names, section headers) to make manual edits. Use the **Layout Controls** to add or delete single rows if necessary.</p>
+                                    <p style="margin: 0 0 15px 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 4: Copy for Outlook</strong><br/>Once the entire report is perfect, click the green **"Copy Report for Outlook"** button. This copies the final, clean HTML to your clipboard.</p>
+                                    <p style="margin: 0; font-size: 16px; line-height: 1.6; color: #555555;"><strong style="color: #005a9e;">Step 5: Paste into Email</strong><br/>Create a new email in Outlook and simply **Paste** (`Ctrl+V` or `Cmd+V`) into the message body. The report will appear perfectly formatted.</p>
                                 </td>
                             </tr>
                         </table>
@@ -100,56 +101,11 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD
                             <tr>
                                 <td>
                                     <h2 class="mobile-h2" style="margin: 0 0 20px 0; font-size: 22px; font-weight: 600; color: #333333;">4. Frequently Asked Questions (FAQ)</h2>
-                                    <!-- FAQ Item 1 -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
-                                        <tr>
-                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td>
-                                            <td>
-                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: Why don't the control buttons appear in the final email?</strong></p>
-                                                <p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> The buttons are part of the editor tool only and are automatically excluded from the final email. Email clients block interactive elements for security, so this is expected behavior.</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- FAQ Item 2 -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
-                                        <tr>
-                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td>
-                                            <td>
-                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: I lost my changes! Why did the template reset?</strong></p>
-                                                <p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> Your edits are saved in your browser's local storage. You must open the file on the <strong>same computer and in the same browser</strong> to see your changes. Clearing your browser cache will also erase them.</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- FAQ Item 3 -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
-                                        <tr>
-                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td>
-                                            <td>
-                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: The formatting looks broken or misaligned when I paste it.</strong></p>
-                                                <p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> Make sure you are using <strong>`Ctrl+A` to Select All</strong> before copying. Do not try to click and drag to select the content, as this can miss important formatting code.</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- FAQ Item 4 -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
-                                        <tr>
-                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td>
-                                            <td>
-                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: How do I undo a deleted row or section?</strong></p>
-                                                <p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> There is no "undo" feature. To restore a deleted section or reset all rows, click the <strong>"Reset All Content & Layout"</strong> button. This will revert the entire template to its original state.</p>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <!-- FAQ Item 5 -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                        <tr>
-                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td>
-                                            <td>
-                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: Can I add a new type of section, like "On Hold Campaigns"?</strong></p>
-                                                <p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> No. The tool is designed to manage the existing sections only. The overall structure is fixed to ensure consistency and email compatibility.</p>
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td><td><p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: The tool isn't working at all or looks like plain text. Why?</strong></p><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> This is the most common issue. You must have both `index.html` and `script.js` files saved in the **exact same folder**.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td><td><p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: Why is the "Add Campaigns" button disabled?</strong></p><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> The button is disabled until all data is valid. Check the red validation message. Common issues are: the number of names doesn't match the number of URLs, a URL is invalid, or you haven't selected a target section.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td><td><p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: The formatting looks broken when I paste into Outlook.</strong></p><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> Always use the **"Copy Report for Outlook"** button. Do not use `Ctrl+A` to select the page manually, as this can copy the control panels and other unwanted code.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td><td><p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: I lost my changes! Why did the template reset?</strong></p><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> Your edits are saved in your browser's local storage. You must open the `index.html` file on the **same computer and in the same browser** to see your changes.</p></td></tr></table>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">❓</td><td><p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Q: How do I undo a deleted row or section?</strong></p><p style="margin: 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #005a9e;">A:</strong> There is no "undo" feature. To restore everything, click the **"Reset All Content & Layout"** button. This will revert the entire template to its original default state.</p></td></tr></table>
                                 </td>
                             </tr>
                         </table>

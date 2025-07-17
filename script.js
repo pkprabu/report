@@ -3,10 +3,10 @@ const STORAGE_KEY = 'emailBuilderState';
 
 const defaultState = {
     metrics: [
-        { region: 'EMEA', deployed: '4', production: '0', followup: '1', listupdated: '0', landingpage: '0', qualtrics: '0', pathfactory: '0', adhoc: '0' },
-        { region: 'LATAM', deployed: '1', production: '0', followup: '0', listupdated: '0', landingpage: '0', qualtrics: '0', pathfactory: '0', adhoc: '0' },
-        { region: 'NA', deployed: '7', production: '0', followup: '0', listupdated: '0', landingpage: '0', qualtrics: '0', pathfactory: '0', adhoc: '0' },
-        { region: 'GLOBAL', deployed: '0', production: '2', followup: '0', listupdated: '0', landingpage: '0', qualtrics: '0', pathfactory: '0', adhoc: '0' }
+        { region: 'EMEA', deployed: '0', production: '0', followup: '0', listupdated: '0', landingpage: '0', qualtrics: '0', pathfactory: '0', adhoc: '0' },
+        { region: 'LATAM', deployed: '0', production: '0', followup: '0', listupdated: '0', landingpage: '0', qualtrics: '0', pathfactory: '0', adhoc: '0' },
+        { region: 'NA', deployed: '0', production: '0', followup: '0', listupdated: '0', landingpage: '0', qualtrics: '0', pathfactory: '0', adhoc: '0' },
+        { region: 'GLOBAL', deployed: '0', production: '0', followup: '0', listupdated: '0', landingpage: '0', qualtrics: '0', pathfactory: '0', adhoc: '0' }
     ],
     deployed: [], production: [], followup: [],
     headers: {

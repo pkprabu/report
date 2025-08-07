@@ -1,0 +1,146 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>System Documentation: Automated Reporting</title>
+<style type="text/css">
+    /* Responsive and Client-Specific Styles */
+    body { width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; }
+    table, td { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+
+    @media screen and (max-width: 600px) {
+        .content-table { width: 100% !important; }
+        .mobile-padding { padding: 20px 15px !important; }
+        .mobile-h1 { font-size: 24px !important; }
+        .mobile-h2 { font-size: 20px !important; }
+    }
+</style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #f0f2f5; font-family: 'Segoe UI', Arial, sans-serif;">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td align="center" bgcolor="#f0f2f5" style="padding: 20px;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+            <tr>
+            <td align="center" valign="top" width="600">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="content-table" style="max-width: 600px; background-color: #ffffff; border: 1px solid #dddddd; border-radius: 8px;">
+                
+                <!-- HEADER -->
+                <tr>
+                    <td align="center" bgcolor="#005a9e" style="background-color: #005a9e; padding: 30px 20px; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+                        <h1 class="mobile-h1" style="margin: 0; font-size: 28px; font-weight: 700; color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif;">Daily Performance Report Email</h1>
+                    </td>
+                </tr>
+
+                <!-- PROJECT 1: DAILY PERFORMANCE REPORT -->
+                <tr>
+                    <td class="mobile-padding" style="padding: 30px 25px;">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <p style="margin: 0 0 20px 0; font-size: 16px; line-height: 1.6; color: #555555;">
+                                        This system fully automates the creation and distribution of the comprehensive daily performance report, sending two distinct emails per shift.
+                                    </p>
+                                    
+                                    <h3 style="margin: 0 0 15px 0; font-size: 18px; color: #005a9e;">Key Concepts & Logic Explained</h3>
+
+                                    <!-- Concept 1: Intelligent Scheduling -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
+                                        <tr>
+                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">📅</td>
+                                            <td>
+                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Intelligent Scheduling & Date Logic</strong></p>
+                                                <p style="margin: 0; font-size: 15px; color: #555555; line-height: 1.5;">
+                                                    <strong>What:</strong> The flow triggers twice daily (7 PM & 3 AM). It immediately calculates a single "Reporting Date" for the entire shift.
+                                                    <br/><strong>Why:</strong> This ensures both emails sent during a single shift are correctly dated and associated with the same workday, which is critical for accurate reporting when a shift spans two calendar days.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- Concept 2: Automated Skip Logic -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
+                                        <tr>
+                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">🚫</td>
+                                            <td>
+                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Automated Skip Logic</strong></p>
+                                                <p style="margin: 0; font-size: 15px; color: #555555; line-height: 1.5;">
+                                                    <strong>What:</strong> The flow checks the "Reporting Date" against weekends and a custom holiday list in Excel.
+                                                    <br/><strong>Why:</strong> This makes the system business-aware. It automatically prevents reports from being sent on non-working days, and the holiday list can be managed easily by anyone in the central Excel file.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- Concept 3: Centralized Data Hub -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
+                                        <tr>
+                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">📁</td>
+                                            <td>
+                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Centralized Data Hub (Excel)</strong></p>
+                                                <p style="margin: 0; font-size: 15px; color: #555555; line-height: 1.5;">
+                                                    <strong>What:</strong> All report content—metrics, campaign lists, recipients, and configuration settings—is stored in uniquely named Tables across different sheets in a single Excel file on SharePoint.
+                                                    <br/><strong>Why:</strong> This is a critical architectural decision. It decouples the <strong>data</strong> from the <strong>logic</strong>. Team members can update any aspect of the report by simply editing a familiar spreadsheet, without ever needing to touch the Power Automate flow. This makes the system highly maintainable and scalable.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- Concept 4: Dynamic HTML Assembly -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
+                                        <tr>
+                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">⚙️</td>
+                                            <td>
+                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Dynamic HTML Assembly</strong></p>
+                                                <p style="margin: 0; font-size: 15px; color: #555555; line-height: 1.5;">
+                                                    <strong>What:</strong> The flow uses variables, loops, and conditions to programmatically build the HTML for each table. It sorts campaigns into "Working" and "Worked" categories and applies alternating row colors ("zebra striping").
+                                                    <br/><strong>Why:</strong> This ensures the data is always presented in a clean, readable, and professional format. It also allows for intelligent content—if a section has no data, it is automatically omitted from the final email.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                    <!-- Concept 5: Bulletproof Email Composition -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tr>
+                                            <td width="30" valign="top" style="padding-top: 4px; font-size: 20px;">✉️</td>
+                                            <td>
+                                                <p style="margin: 0 0 5px 0; font-size: 16px; color: #555555; line-height: 1.5;"><strong style="color: #333;">Bulletproof Email Composition</strong></p>
+                                                <p style="margin: 0; font-size: 15px; color: #555555; line-height: 1.5;">
+                                                    <strong>What:</strong> The final step uses a <strong>Compose</strong> action with a complex expression to assemble all the generated HTML blocks into a master template. This template uses email-safe code (inlined styles, tables for layout).
+                                                    <br/><strong>Why:</strong> This guarantees the email will look perfect and professional in all email clients, especially tricky ones like Microsoft Outlook.
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!-- FOOTER -->
+                <tr>
+                    <td bgcolor="#f0f2f5" style="background-color: #f0f2f5; padding: 20px; text-align: center; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+                        <p style="margin: 0; font-size: 13px; color: #888888;">This document outlines the current state of the automated systems.</p>
+                    </td>
+                </tr>
+
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</table>
+</body>
+
+</html>
